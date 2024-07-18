@@ -1,0 +1,108 @@
+<header id="header" class="w-full relative">
+  <!-- Navabr top -->
+  <div
+    id="header"
+    class="flex flex-col md:flex-row space-y-3 md:items-center md:justify-between bg-blue-700 px-7 py-2"
+  >
+    <!-- Contact details  -->
+    <div id="contact" class="text-white md:flex md:items-center md:gap-3">
+      <p id="phone-number"><i class="fa-solid fa-phone"></i> +91 9633702159</p>
+      <span class="hidden md:block">|</span>
+      <p id="phone-number">
+        <i class="fa-solid fa-envelope"></i> info.karmana@gmail.com
+      </p>
+    </div>
+    <!-- Apply Link -->
+    <button
+      class="bg-white px-5 py-2 font-bold rounded-md hover:scale-95 transition"
+    >
+      Apply for KEPT 2024
+    </button>
+  </div>
+  <!-- Main Nav -->
+  <div id="main-header" class="px-7 py-5 flex items-center justify-between">
+    <a href="/"><h1 class="font-bold text-5xl text-blue-400">KSWZ</h1></a>
+    <nav class="hidden md:block">
+      <ul class="md:flex md:items-center md:gap-5 text-2xl">
+        <li><a href="/">Home</a></li>
+        <li class="relative cursor-pointer select-none" id="about">
+          About Us <i class="fa-solid fa-caret-down"></i>
+          <ul
+            id="about-child"
+            class="absolute bg-gray-200 px-5 py-2 hidden transition rounded-md space-y-4"
+          >
+            <li class="text-nowrap">
+              <a
+                href="/about-kswz"
+                class="text-base hover:font-bold border-b-2 border-black"
+                >About KSWZ</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="relative cursor-pointer select-none" id="kept-about">
+          KEPT 2024 <i class="fa-solid fa-caret-down"></i>
+          <ul
+            class="absolute bg-gray-200 px-5 py-2 rounded-md space-y-4 hidden"
+            id="kept-child"
+          >
+            <li class="text-nowrap hover:font-bold border-b-2 border-black">
+              <a href="#" class="text-base">Key Dates</a>
+            </li>
+            <li class="text-nowrap hover:font-bold border-b-2 border-black">
+              <a href="#" class="text-base">Text Centres</a>
+            </li>
+            <li class="text-nowrap hover:font-bold border-b-2 border-black">
+              <a href="#" class="text-base">Test Structure</a>
+            </li>
+            <li class="text-nowrap hover:font-bold border-b-2 border-black">
+              <a href="#" class="text-base">Eligibility</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="hamburger" class="md:hidden text-gray-500 text-3xl">
+      <span id="horizontal"><i class="fa-solid fa-bars"></i></span>
+      <span id="cross" class="hidden"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+  </div>
+
+  <div id="hamburger-menu" class="bg-white shadow-md border-2 py-3 hidden">
+    <ul class="flex flex-col items-center justify-center md:gap-5 text-base">
+      <li><a href="/">Home</a></li>
+      <li class="cursor-pointer select-none" id="about-2">
+        About Us <i class="fa-solid fa-caret-down"></i>
+        <ul id="about-child-2" class="bg-gray-200 px-5 py-2 hidden rounded-md">
+          <li class="text-nowrap">
+            <a href="/about-kswz">About KSWZ</a>
+          </li>
+        </ul>
+      </li>
+      <li class="cursor-pointer select-none" id="kept-about-2">
+        KEPT 2024 <i class="fa-solid fa-caret-down"></i>
+        <ul
+          class="bg-gray-200 px-5 py-2 rounded-md t space-y-4 hidden"
+          id="kept-child-2"
+        >
+          <li class="text-nowrap hover:font-bold border-b-2 border-black">
+            <a href="/about" class="text-base">Key Dates</a>
+          </li>
+          <li class="text-nowrap hover:font-bold border-b-2 border-black">
+            <a href="#" class="text-base">Text Centres</a>
+          </li>
+          <li class="text-nowrap hover:font-bold border-b-2 border-black">
+            <a href="#" class="text-base">Test Structure</a>
+          </li>
+          <li class="text-nowrap hover:font-bold border-b-2 border-black">
+            <a href="#" class="text-base">Eligibility</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<script src="/scripts/header.js"></script>

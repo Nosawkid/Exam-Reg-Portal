@@ -1,0 +1,26 @@
+{
+  "name": "student-portal",
+  "version": "1.0.0",
+  "description": "A simple web app for a mock exam registration",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js",
+    "watch": "concurrently \"nodemon index.js\" \"npx tailwindcss -i ./public/css/style.css -o ./public/css/output.css --watch\""
+  },
+  "author": "Yaseen Sidhik",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  }
+}
