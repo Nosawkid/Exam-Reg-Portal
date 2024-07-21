@@ -17,6 +17,8 @@
     "express": "^4.19.2",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.18.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "method-override": "^3.0.0",
     "mongoose": "^8.5.1"
   },

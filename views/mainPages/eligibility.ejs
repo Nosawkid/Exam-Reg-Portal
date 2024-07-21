@@ -1,0 +1,124 @@
+<section
+  id="eligibility-criteria"
+  class="flex items-center justify-center md:px-10"
+>
+  <div class="container mx-auto px-4 py-8">
+    <!-- Table Wrapper -->
+    <div class="overflow-x-auto">
+      <table
+        class="min-w-full divide-y divide-gray-200 bg-white shadow-md rounded-lg"
+      >
+        <thead>
+          <tr>
+            <th
+              colspan="2"
+              class="px-6 py-3 text-left text-lg font-medium text-gray-900 bg-gray-50"
+            >
+              Eligibility Criteria - KEPT 2024
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th
+              class="px-6 py-4 text-left font-medium text-gray-700 bg-gray-50"
+            >
+              Educational Qualification
+            </th>
+            <td class="px-6 py-4 text-gray-600">
+              Completion of High School: Applicants must have completed high
+              school or an equivalent level of education from a recognized
+              institution. This includes the equivalent of 12th grade or
+              secondary education in various educational systems around the
+              world.
+            </td>
+          </tr>
+          <tr>
+            <th
+              class="px-6 py-4 text-left font-medium text-gray-700 bg-gray-50"
+              rowspan="2"
+            >
+              Age Limit
+            </th>
+            <td class="px-6 py-4 text-gray-600">
+              <strong>Minimum Age:</strong> Applicants must be at least 17 years
+              old by the date of the exam.
+            </td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-gray-600">
+              <strong>Maximum Age:</strong> There is no upper age limit, but
+              applicants must have completed their high school education within
+              the last five years.
+            </td>
+          </tr>
+          <tr>
+            <th
+              class="px-6 py-4 text-left font-medium text-gray-700 bg-gray-50"
+              rowspan="2"
+            >
+              International Students
+            </th>
+            <td class="px-6 py-4 text-gray-600">
+              <strong>Recognition of Foreign Credentials:</strong> International
+              students must ensure that their high school credentials are
+              recognized and equivalent to the standards required by Karmana.
+            </td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-gray-600">
+              <strong>Language Proficiency:</strong>
+              If the applicant’s primary language is not English or any Indian
+              languages, they may need to provide proof of proficiency in the
+              language of instruction.
+            </td>
+          </tr>
+          <tr>
+            <th
+              class="px-6 py-4 text-left font-medium text-gray-700 bg-gray-50"
+              rowspan="2"
+            >
+              Special Conditions
+            </th>
+            <td class="px-6 py-4 text-gray-600">
+              <strong>Students from Magical Institutions:</strong> Students from
+              other magical institutions, such as Hogwarts, Ilvermorny, or any
+              other recognized magical schools, are eligible to apply. They must
+              provide official transcripts and proof of magical education.
+            </td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-gray-600">
+              <strong>Non-traditional Education:</strong>
+              Students who have completed education through non-traditional
+              means (e.g., homeschooling or tutored by other wizards) must
+              provide detailed documentation and proof of their education.
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2" class="py-2 text-center">
+              <button
+                onclick="printEligibility()"
+                class="bg-sky-600 px-4 py-2 text-white font-bold rounded-md hover:bg-blue-600"
+                id="print-btn"
+              >
+                Print Now
+              </button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <script>
+    function printEligibility() {
+      document.querySelector("header").classList.add("hidden");
+      document.querySelector("tfoot").classList.add("hidden");
+      window.print();
+      document.querySelector("header").classList.remove("hidden");
+      document.querySelector("tfoot").classList.remove("hidden");
+    }
+  </script>
+</section>
