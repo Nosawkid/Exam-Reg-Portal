@@ -34,7 +34,7 @@
           />
         </div>
       </div>
-      <div id="other-info" class="flex flex-col items-center mt-3 md:flex-row">
+      <div id="age-info" class="flex flex-col items-center mt-3 md:flex-row">
         <div
           id="age-n-dob"
           class="w-full flex flex-col gap-3 items-center justify-center md:flex-row md:gap-5"
@@ -59,10 +59,92 @@
               id="age"
               disabled
             />
+            <input
+              class="border-2 w-full md:py-2"
+              type="hidden"
+              name="currentAge"
+              id="currentAge"
+              disabled
+            />
           </div>
         </div>
       </div>
+      <div
+        id="other-info"
+        class="mt-3 flex flex-col items-center justify-center md:flex-row md:flex-wrap gap-3"
+      >
+        <div class="form-item w-[90%] md:w-1/5">
+          <label for="email" class="block">Email</label>
+          <input
+            class="border-2 w-full md:py-2"
+            type="email"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div class="form-item w-[90%] md:w-1/5">
+          <label for="email" class="block">Phone (Use Country Code)</label>
+          <input
+            class="border-2 w-full md:py-2"
+            type="text"
+            name="phone"
+            id="phone"
+          />
+        </div>
+        <div class="form-item w-[90%] md:w-1/5">
+          <label for="email" class="block">Country</label>
+          <input
+            class="border-2 w-full md:py-2"
+            type="text"
+            name="country"
+            id="country"
+          />
+        </div>
+        <div class="form-item w-[90%] md:w-1/5">
+          <label for="email" class="block">Name of High School</label>
+          <select
+            class="border-2 w-full md:py-2"
+            type="text"
+            name="high-school"
+            id="high-school"
+          >
+            <option value="">Choose a High School</option>
+            <option value="Karmana">Karmana</option>
+            <option value="Ilvermorny">Ilvermorny</option>
+            <option value="Beauxbatons">Beauxbatons</option>
+            <option value="Durmstrang">Durmstrang</option>
+            <option value="Castelobruxo ">Castelobruxo</option>
+            <option value="Mahoutokoro">Mahoutokoro</option>
+            <option value="Uagadou ">Uagadou</option>
+          </select>
+        </div>
+      </div>
+      <div id="adress-info" class="flex flex-col md:flex-row gap-3 mt-3">
+        <div class="form-item w-[90%] md:w-full">
+          <label for="address-1" class="block">Address Line 1</label>
+          <textarea
+            name="address-1"
+            class="w-full border-2"
+            id="address-1"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="form-item w-[90%] md:w-full">
+          <label for="address-2" class="block">Address Line 2</label>
+          <textarea
+            name="address-2"
+            class="w-full border-2"
+            id="address-2"
+            rows="5"
+          ></textarea>
+        </div>
+      </div>
     </div>
+    <button
+      class="block mx-auto mt-3 bg-blue-700 rounded-lg hover:bg-sky-700 px-4 py-2 text-white font-bold"
+    >
+      Submit
+    </button>
   </form>
 </section>
 
